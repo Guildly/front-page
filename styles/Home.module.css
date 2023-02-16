@@ -1,143 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+
 .main {
-  display: flex;
-  flex-direction: column;
+  display        : flex;
+  flex-direction : column;
   justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
-  background: var(--background);
-  background-image: url("/blueflamebg.png");
-  background-size      : cover;
+  align-items    : center;
+  min-height     : 100vh;
 }
 
 .navbar {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  position       : absolute;
+  display        : flex;
+  flex-direction : row;
+  align-items    : center;
   justify-content: space-between;
-  height: 5%;
-  padding: 70px 6rem;
-  width: 100%;
-  top: 0px;
+  padding        : 0px 6rem;
+  width          : 100%;
+  height         : 80px;
+  z-index        : 1;
 }
 
 .navLogo {
   position: relative;
-  display: inherit;
-  width: 100%;
-  z-index: 2;
+  display : inherit;
+  width   : 100%;
+  z-index : 2;
 
 }
 
 .navContent {
-  display: flex;
+  display       : flex;
   flex-direction: row;
-  gap: 30%;
-  width: 100%;
+  gap           : 30%;
+  width         : 100%;
 }
 
 .navLinks {
-  display: flex;
+  display       : flex;
   flex-direction: row;
-  align-items: center;
-  gap: 5%;
-  color: #FFFFFF;
-  font-size: medium;
-  font-weight: 500;
+  align-items   : center;
+  gap           : 8%;
+  color         : #FFFFFF;
+  font-size     : large;
 }
 
 .appButton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  border:  #DCCB8D solid 2px;
+  display         : flex;
+  align-items     : center;
+  justify-content : center;
+  border-radius   : 5px;
+  border          : #DCCB8D solid 2px;
   background-color: gray;
-  color: #DCCB8D;
-  font-weight: bold;
-  width: 30%;
-  padding: 5px;
+  color           : #DCCB8D;
+  font-weight     : bold;
+  width           : 30%;
+  padding         : 5px;
+  cursor          : pointer;
 
 
 }
 
+
 .grid {
-  display: grid;
+  display              : grid;
   grid-template-columns: repeat(4, minmax(25%, auto));
-  width: var(--max-width);
-  max-width: 100%;
+  width                : var(--max-width);
+  max-width            : 100%;
 }
 
 .card {
-  padding: 1rem 1.2rem;
+  padding      : 1rem 1.2rem;
   border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
-  transition: background 200ms, border 200ms;
+  background   : rgba(var(--card-rgb), 0);
+  border       : 1px solid rgba(var(--card-border-rgb), 0);
+  transition   : background 200ms, border 200ms;
 }
 
 .card span {
-  display: inline-block;
+  display   : inline-block;
   transition: transform 200ms;
 }
 
 .card h2 {
-  font-weight: 600;
+  font-weight  : 600;
   margin-bottom: 0.7rem;
 }
 
 .card p {
-  margin: 0;
-  opacity: 0.6;
-  font-size: 0.9rem;
+  margin     : 0;
+  opacity    : 0.6;
+  font-size  : 0.9rem;
   line-height: 1.5;
-  max-width: 30ch;
+  max-width  : 30ch;
 }
 
 .header {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
+  min-height     : 100vh;
+  display        : flex;
+  flex-direction : row;
+  gap            : 10px;
   justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 4rem 0;
+  align-items    : center;
+  position       : relative;
+  padding        : 4rem;
+  background     : linear-gradient(45deg, rgb(22, 29, 41, 0.5), rgb(22, 29, 41, 0.5)), url("/blueflamebg.png");
+  background-size: cover;
+
 }
 
 .headerContent p {
-  font-family: 'Neuton';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 72px;
-  line-height: 91px;
+  font-family   : 'Neuton';
+  font-style    : normal;
+  font-weight   : 700;
+  font-size     : 72px;
+  line-height   : 91px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color         : #FFFFFF;
+  padding       : 4rem;
 }
+
+.problem {
+  min-height     : 100vh;
+  display        : flex;
+  flex-direction : row;
+  gap            : 10px;
+  justify-content: center;
+  align-items    : center;
+  position       : relative;
+
+}
+
+.problemContent {
+  z-index: 20;
+}
+
+.problemContent h1 {
+  font-family   : 'Neuton';
+  font-style    : normal;
+  font-weight   : 400;
+  font-size     : 60px;
+  line-height   : 70px;
+  text-transform: uppercase;
+  letter-spacing: 0.0125em;
+  color         : #DCCB8D;
+  padding       : 4rem;
+
+
+}
+
+.problemBox {
+  background   : rgba(50, 52, 64, 0.7);
+  box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding      : 4%;
+  margin       : 20px;
+  max-width    : 600px;
+}
+
+.problemBox2 {
+  background   : #B4A28B;
+  box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding      : 4%;
+  margin       : 20px;
+  max-width    : 600px;
+}
+
+.problemContent p {
+  color    : #FFFFFF;
+  font-size: 26px;
+}
+
+.celticBackground {
+  position       : absolute;
+  width          : 1650.55px;
+  height         : 1487px;
+  top            : 710px;
+  width          : 100%;
+  background     : linear-gradient(45deg, rgb(22, 29, 41, 0.5), rgb(22, 29, 41, 0.5)), url("/CelticBg.png");
+  background-size: cover;
+}
+
 
 .logo {
   position: relative;
 }
 
+.NFTCards {
+  flex-direction: row;
+  position      : absolute;
+  height        : 100%;
+  width         : 100%;
+  top           : 35%;
+  left          : 50%;
+}
+
+.NFTCard1 {
+  position: absolute;
+  z-index : 6;
+
+
+}
+
+.NFTCard2 {
+  position: absolute;
+  left    : 10%;
+  z-index : 5;
+
+}
+
+.NFTCard3 {
+  position: absolute;
+  left    : 20%;
+  z-index : 4;
+
+}
+
+
+.statement {
+  display        : flex;
+  flex-direction : row;
+  justify-content: center;
+  align-items    : center;
+  position       : relative;
+  width          : 100%;
+
+
+}
+
+
+.statement h2 {
+  font-size  : 40px;
+  color      : #ffffff;
+  position   : relative;
+  align-items: center;
+
+}
+
+.statementContent {
+  font-size  : 40px;
+  color      : hsl(0, 11%, 98%);
+  line-height: 40px;
+
+}
+
+.statementContentBox {
+
+  border-radius: 10px;
+  width        : 350px;
+  height       : 300px;
+  padding      : 10%;
+  max-width    : 800px;
+
+
+}
+
+.statementContent ul {
+  list-style-image: url("/thumb-down.svg");
+
+}
+
+.statementContent li {
+  font-size: 60px;
+
+}
+
+.statementContent li span {
+  font-size  : x-large;
+  margin-left: 20px;
+
+}
+
+.statementContentBox p {
+  color    : #96A2BB;
+  font-size: 40px;
+
+}
+
+.quote {
+  width: 50%;
+}
+
+.quote p {
+  width : 80%;
+  margin: auto;
+}
+
+.quoteMark1 {
+  position   : relative;
+  bottom     : -50px;
+  font-size  : 100px;
+  font-weight: bold;
+  font-style : italic;
+  color      : #FFFFFF;
+  font-family: 'MedievalSharp', cursive;
+}
+
+.quoteMark2 {
+  position   : relative;
+  left       : 80%;
+  font-size  : 100px;
+  font-weight: bold;
+  font-style : italic;
+  color      : #FFFFFF;
+  font-family: 'MedievalSharp', cursive;
+
+}
+
+.solution {
+  display        : flex;
+  flex-direction : column;
+  gap            : 20px;
+  justify-content: left;
+  align-items    : center;
+  position       : relative;
+  padding        : 4rem;
+  background     : linear-gradient(45deg, rgb(22, 29, 41, 0.5), rgb(22, 29, 41, 0.5));
+  background-size: cover;
+  height         : 200vh;
+
+}
+
+.solution h1 {
+  font-size: 40px;
+  color    : hsl(0, 11%, 98%);
+  position : relative;
+  padding  : 2%;
+
+}
+
+.solution p {
+  font-size: x-large;
+  color    : #DCCB8D;
+  position : relative;
+}
+
+.solutionscontent {
+  display        : flex;
+  flex-direction : row;
+  gap            : 20px;
+  min-width      : 100px;
+  justify-content: left;
+  align-items    : center;
+  position       : relative;
+}
+
+.solutionsbox {
+  background   : rgba(50, 52, 64, 0.7);
+  box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding      : 4%;
+  margin       : 20px;
+  max-width    : 300px;
+  border       : 5px solid #DCCB8D;
+  border-radius: 30px;
+
+}
+
+
 
 /* Conic Gradient Animation */
 .thirteen::before {
-  animation: 6s rotate linear infinite;
-  width: 200%;
-  height: 200%;
+  animation : 6s rotate linear infinite;
+  width     : 200%;
+  height    : 200%;
   background: var(--tile-border);
 }
 
 /* Inner Square */
 .thirteen::after {
-  inset: 0;
-  padding: 1px;
+  inset        : 0;
+  padding      : 1px;
   border-radius: var(--border-radius);
-  background: linear-gradient(
-    to bottom right,
-    rgba(var(--tile-start-rgb), 1),
-    rgba(var(--tile-end-rgb), 1)
-  );
+  background   : linear-gradient(to bottom right,
+      rgba(var(--tile-start-rgb), 1),
+      rgba(var(--tile-end-rgb), 1));
   background-clip: content-box;
 }
 
@@ -145,7 +383,7 @@
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
     background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+    border    : 1px solid rgba(var(--card-border-rgb), 0.15);
   }
 
   .card:hover span {
@@ -171,9 +409,9 @@
 
   .grid {
     grid-template-columns: 1fr;
-    margin-bottom: 120px;
-    max-width: 320px;
-    text-align: center;
+    margin-bottom        : 120px;
+    max-width            : 320px;
+    text-align           : center;
   }
 
   .card {
@@ -190,7 +428,7 @@
 
   .center::before {
     transform: none;
-    height: 300px;
+    height   : 300px;
   }
 
   .description {
@@ -203,42 +441,51 @@
 
   .description p,
   .description div {
-    display: flex;
+    display        : flex;
     justify-content: center;
-    position: fixed;
-    width: 100%;
+    position       : fixed;
+    width          : 100%;
   }
 
   .description p {
-    align-items: center;
-    inset: 0 0 auto;
-    padding: 2rem 1rem 1.4rem;
+    align-items  : center;
+    inset        : 0 0 auto;
+    padding      : 2rem 1rem 1.4rem;
     border-radius: 0;
-    border: none;
+    border       : none;
     border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
-    background: linear-gradient(
-      to bottom,
-      rgba(var(--background-start-rgb), 1),
-      rgba(var(--callout-rgb), 0.5)
-    );
+    background   : linear-gradient(to bottom,
+        rgba(var(--background-start-rgb), 1),
+        rgba(var(--callout-rgb), 0.5));
     background-clip: padding-box;
     backdrop-filter: blur(24px);
   }
 
   .description div {
-    align-items: flex-end;
+    align-items   : flex-end;
     pointer-events: none;
-    inset: auto 0 0;
-    padding: 2rem;
-    height: 200px;
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgb(var(--background-end-rgb)) 40%
-    );
+    inset         : auto 0 0;
+    padding       : 2rem;
+    height        : 200px;
+    background    : linear-gradient(to bottom,
+        transparent 0%,
+        rgb(var(--background-end-rgb)) 40%);
     z-index: 1;
   }
+
+  .header {
+    display       : flex;
+    flex-direction: column;
+  }
+
+  .statement {
+    display       : flex;
+    flex-direction: column;
+  }
+
+
 }
+
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
@@ -262,6 +509,7 @@
   from {
     transform: rotate(360deg);
   }
+
   to {
     transform: rotate(0deg);
   }

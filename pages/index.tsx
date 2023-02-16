@@ -1,107 +1,32 @@
 import Image from "next/image";
-import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import Explore from "../components/Explore";
+import Header from "@/sections/Header";
+import Problem from "@/sections/Problem";
+import Grid from "@/components/Grid";
+import Navbar from "@/components/Navbar";
+import Statement from "@/components/Statement";
+import Solution from "@/sections/Solution";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.navbar}>
-        <div className={styles.navLogo}>
-          {/* <Image
-            src={"/logo-text.svg"}
-            alt="guildly-logo-text"
-            fill={true}
-            style={{ objectFit: "contain" }}
-          /> */}
-          <img src={"/logo-text.svg"} alt="guildly-logo-text" />
-        </div>
-        <div className={styles.navContent}>
-          <div className={styles.navLinks}>
-            <a href="#about">About</a>
-            <a href="#problem">Problem</a>
-            <a href="#solution">Solution</a>
-            <a href="#feature">Feature</a>
-            <a href="#application">Application</a>
-          </div>
-          <div className={styles.appButton}>
-            <p>Launch App</p>
-          </div>
-        </div>
-      </div>
+      <Navbar />
+      <Header />
 
-      <div className={styles.header}>
-        <Image
-          className={styles.logo}
-          src="/guildly-logo.png"
-          alt="Guildly Logo"
-          width={455}
-          height={494}
-        />
-        <div className={styles.headerContent}>
-          <p>Protocol for sharing NFTs and Gameplay</p>
-        </div>
-      </div>
+      <section id="about" className="snap-center overflow-x-scroll"></section>
+      <Problem />
+      <div className={styles.celticBackground} />
+      <section id="problem" className="snap-center overflow-x-scroll"></section>
+      <Statement />
 
-      <div className={styles.grid} id="about">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and&nbsp;API.
-          </p>
-        </a>
+      <section
+        id="solution"
+        className="snap-center overflow-x-scroll"
+      ></section>
+      <Solution />
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL
-            with&nbsp;Vercel.
-          </p>
-        </a>
-      </div>
+      <Grid />
     </main>
   );
 }
