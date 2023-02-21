@@ -7,6 +7,8 @@ import Grid from "@/components/Grid";
 import Navbar from "@/components/Navbar";
 import Statement from "@/components/Statement";
 import Solution from "@/sections/Solution";
+import Feature from "@/sections/Feature";
+import Application from "@/sections/Application";
 
 export default function Home() {
   return (
@@ -26,7 +28,18 @@ export default function Home() {
       ></section>
       <Solution />
 
-      <Grid />
+      <section id="feature" className="snap-center overflow-x-scroll"></section>
+      <Feature />
+      <div className={styles.featureBackground}></div>
+
+      <section
+        id="application"
+        className="snap-center overflow-x-scroll"
+      ></section>
+      <Application />
+      <div className={styles.applicationBackground}></div>
+
+      {/* <Grid /> */}
     </main>
   );
 }

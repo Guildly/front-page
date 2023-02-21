@@ -310,55 +310,241 @@
 
 .solution {
   display        : flex;
-  flex-direction : column;
   gap            : 20px;
-  justify-content: left;
+  width          : 100%;
+  justify-content: center;
   align-items    : center;
   position       : relative;
   padding        : 4rem;
   background     : linear-gradient(45deg, rgb(22, 29, 41, 0.5), rgb(22, 29, 41, 0.5));
   background-size: cover;
-  height         : 200vh;
-
+  height         : 150vh;
 }
+
+
 
 .solution h1 {
-  font-size: 40px;
-  color    : hsl(0, 11%, 98%);
-  position : relative;
-  padding  : 2%;
-
-}
-
-.solution p {
-  font-size: x-large;
-  color    : #DCCB8D;
-  position : relative;
-}
-
-.solutionscontent {
-  display        : flex;
-  flex-direction : row;
-  gap            : 20px;
-  min-width      : 100px;
-  justify-content: left;
-  align-items    : center;
+  font-size      : 48px;
+  line-height    : 61px;
+  text-align     : center;
+  color          : #FFFFFF;
   position       : relative;
+  padding        : 2%;
+  align-items    : center;
+  justify-content: center;
+  width          : 100%;
+
 }
 
-.solutionsbox {
+.solutionsp {
+  font-weight: 400;
+  font-size  : 48px;
+  line-height: 61px;
+  text-align : center;
+  color      : #DEC4A1;
+}
+
+
+
+
+.solutionsgrid p {
+  font-size     : x-large;
+  line-height   : 25px;
+  letter-spacing: -0.011em;
+  color         : #FFFFFF;
+
+}
+
+
+.solutionsgrid h1 {
+  text-align    : left;
+  font-size     : 30px;
+  line-height   : 25px;
+  letter-spacing: -0.011em;
+  color         : #DCCB8D;
+
+}
+
+.solutionsgrid1 {
+  width         : 100%;
+  display       : flex;
+  flex-direction: row;
+
+}
+
+.solutionsgrid2 {
+  width         : 100%;
+  flex-direction: column;
+  display       : flex;
+}
+
+.solutionsbox1 {
   background   : rgba(50, 52, 64, 0.7);
   box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   padding      : 4%;
-  margin       : 20px;
-  max-width    : 300px;
+  margin       : 30px;
   border       : 5px solid #DCCB8D;
-  border-radius: 30px;
+  width        : 60%;
+  position     : relative;
+  height       : 100%;
 
 }
 
 
+.solutionsbox2 {
+  background   : rgba(50, 52, 64, 0.7);
+  box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  width        : 60%;
+  padding      : 4%;
+  margin       : auto 0px;
+  border       : 5px solid #DCCB8D;
+  position     : relative;
+  height       : 100%;
+}
+
+.solutionsbox3 {
+  background   : rgba(50, 52, 64, 0.7);
+  box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding      : 4%;
+  border       : 5px solid #DCCB8D;
+  position     : relative;
+  height       : 100%;
+  width        : 60%;
+  align-self   : center;
+}
+
+.solutionsfooter {
+  color      : #DCCB8D;
+  font-weight: 700;
+  font-size  : 96px;
+  line-height: 121px;
+  text-align : center;
+}
+
+.solutionsfooterp {
+  font-size  : 24px;
+  line-height: 30px;
+  text-align : center;
+  color      : #FFFFFF;
+}
+
+.feature {
+  display        : flex;
+  flex-direction : column;
+  gap            : 50px;
+  justify-content: center;
+  height         : 100%;
+  width          : 100%;
+  padding        : 5rem;
+}
+
+.feature h1 {
+  font-size  : 64px;
+  line-height: 16px;
+  color      : #DCCB8D;
+}
+
+.feature p {
+  font-size  : 36px;
+  line-height: 46px;
+  color      : #FFFFFF;
+}
+
+.Featuregrid {
+  display       : flex;
+  flex-direction: row;
+  gap           : 15px;
+  position      : relative;
+  width         : 100%;
+  align-self    : center;
+  padding       : 2rem;
+}
+
+.FeatureBox {
+  background     : #323440;
+  border         : 5px solid #DCCB8D;
+  border-radius  : 20px;
+  width          : 25%;
+  padding        : 3%;
+  align-items    : center;
+  display        : flex;
+  justify-content: center;
+  flex-direction : column;
+}
+
+.FeatureBox h1 {
+  font-weight: 400;
+  font-size  : 22px;
+  line-height: 30px;
+  color      : #DCCB8D;
+  text-align : center;
+
+}
+
+.FeatureBox p {
+  font-weight: 400;
+  font-size  : 22px;
+  line-height: 18px;
+  text-align : center;
+  color      : #FFFFFF;
+}
+
+.FeatureBox .icon {
+  align-items: center;
+}
+
+.featureBackground {
+  position       : absolute;
+  width          : 100%;
+  height         : 100%;
+  background     : linear-gradient(45deg, rgb(22, 29, 41, 0), rgb(22, 29, 41, 0)), url("/smokebg.png");
+  background-size: cover;
+  top            : 2750px;
+}
+
+.application {
+
+  display       : flex;
+  flex-direction: row;
+
+}
+
+.applicationHeader {
+  text-align    : left;
+  font-size     : 30px;
+  line-height   : 25px;
+  letter-spacing: -0.011em;
+  color         : #DCCB8D;
+  padding       : 4%;
+
+}
+
+.ApplicationGrid {}
+
+.applicationBar {
+  display       : flex;
+  flex-direction: row;
+  background    : rgba(50, 52, 64, 0.8);
+  box-shadow    : 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius : 20px;
+  width         : 711px;
+  height        : 133px;
+  left          : 154px;
+
+}
+
+.logostark {
+  position: absolute;
+  width   : 1181px;
+  height  : 1219px;
+  left    : -300px;
+  top     : 3522px;
+
+  opacity: 0.5;
+}
 
 /* Conic Gradient Animation */
 .thirteen::before {

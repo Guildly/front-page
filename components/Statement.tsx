@@ -6,12 +6,12 @@ const Statement = () => {
     <div className={styles.statement}>
       <div className={styles.quote}>
         <h2>
-          <div className={styles.quoteMark1}>"</div>
+          <div className={styles.quoteMark1}>&quot;</div>
           <p>
-            Guild models are managed by large DAO's with strict and selective
-            entry requirements.
+            Guild models are managed by large DAO&apos;s with strict and
+            selective entry requirements.
           </p>
-          <div className={styles.quoteMark2}>"</div>
+          <div className={styles.quoteMark2}>&quot;</div>
         </h2>
       </div>
       <div className={styles.statementContent}>
