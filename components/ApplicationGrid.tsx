@@ -13,7 +13,10 @@ const ApplicationGrid = () => {
           width={40}
           height={40}
         ></Image>
-        <p>Explore and manage your guilds from the Guildhall</p>
+        <p>
+          Explore and manage your guilds from the
+          <span className={styles.appText}> Guildhall</span>
+        </p>
       </div>
 
       <div className={styles.applicationBar}>
@@ -21,10 +24,13 @@ const ApplicationGrid = () => {
           className={styles.applicationIcon}
           src="/vault.png"
           alt="Vault"
-          width={40}
+          width={42}
           height={40}
         ></Image>
-        <p>Explore and manage your guilds from the Guildhall</p>
+        <p>
+          Deposit and withdraw items into the Guild
+          <span className={styles.appText}> Bank</span>
+        </p>
       </div>
       <div className={styles.applicationBar}>
         <Image
@@ -34,17 +40,23 @@ const ApplicationGrid = () => {
           width={40}
           height={40}
         ></Image>
-        <p>Explore and manage your guilds from the Guildhall</p>
+        <p>
+          Manage and analyse fee policies in the
+          <span className={styles.appText}> Market</span>
+        </p>
       </div>
       <div className={styles.applicationBar}>
         <Image
           className={styles.applicationIcon}
           src="/checksquare.png"
           alt="Home"
-          width={40}
+          width={42}
           height={40}
         ></Image>
-        <p>Explore and manage your guilds from the Guildhall</p>
+        <p>
+          Assess the ongoing proposals in the
+          <span className={styles.appText}> Council</span>
+        </p>
       </div>
     </div>
   );

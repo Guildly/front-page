@@ -9,37 +9,35 @@ import Statement from "@/components/Statement";
 import Solution from "@/sections/Solution";
 import Feature from "@/sections/Feature";
 import Application from "@/sections/Application";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <Navbar />
-      <Header />
+    <>
+      <main className={styles.main}>
+        <Navbar />
+        <Header />
 
-      <section id="about" className="snap-center overflow-x-scroll"></section>
-      <Problem />
-      <div className={styles.celticBackground} />
-      <section id="problem" className="snap-center overflow-x-scroll"></section>
-      <Statement />
+        <section id="about">
+          <Problem />
+        </section>
 
-      <section
-        id="solution"
-        className="snap-center overflow-x-scroll"
-      ></section>
-      <Solution />
+        <div className={styles.celticBackground} />
+        <Statement />
 
-      <section id="feature" className="snap-center overflow-x-scroll"></section>
-      <Feature />
-      <div className={styles.featureBackground}></div>
+        <Solution />
 
-      <section
-        id="application"
-        className="snap-center overflow-x-scroll"
-      ></section>
-      <Application />
-      <div className={styles.applicationBackground}></div>
+        <Feature />
+        <div className={styles.featureBackground}></div>
 
-      {/* <Grid /> */}
-    </main>
+        <Application />
+        <div className={styles.applicationBackground}></div>
+        <div className={styles.applicationBackgroundMob}></div>
+
+        {/* <Grid /> */}
+
+        <Footer />
+      </main>
+    </>
   );
 }

@@ -56,11 +56,11 @@ body {
   max-width  : 100vw;
   overflow-x : hidden;
   font-family: 'Neuton', serif;
-
 }
 
 body {
-
+  min-height      : 100vh;
+  margin          : 0px;
   background-size : cover;
   font-family     : 'Neuton', Times, serif;
   background-color: #161D29;

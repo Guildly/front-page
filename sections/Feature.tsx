@@ -5,16 +5,18 @@ import FeatureGrid from "@/components/FeatureGrid";
 
 const Feature = () => {
   return (
-    <div className={styles.feature}>
-      <h1>Guild Accounts</h1>
-      <p>
-        Anyone can create a guild account. No collateral. No monopolization.
-        Trustless. Permissionless.
-      </p>
-      <div>
-        <FeatureGrid />
+    <section id="feature" className={styles.section}>
+      <div className={styles.feature}>
+        <h1>Guild Accounts</h1>
+        <p>
+          Anyone can create a guild account. No collateral. No monopolization.
+          Trustless. Permissionless.
+        </p>
+        <div>
+          <FeatureGrid />
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

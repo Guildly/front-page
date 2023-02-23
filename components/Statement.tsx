@@ -3,7 +3,7 @@ import styles from "@/styles/Home.module.css";
 
 const Statement = () => {
   return (
-    <div className={styles.statement}>
+    <section id="problem" className={styles.statement}>
       <div className={styles.quote}>
         <h2>
           <div className={styles.quoteMark1}>&quot;</div>
@@ -33,7 +33,7 @@ const Statement = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
