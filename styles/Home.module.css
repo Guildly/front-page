@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 
-
 .main {
   display        : flex;
   flex-direction : column;
   justify-content: space-between;
   align-items    : center;
   min-height     : 100vh;
+  flex-grow      : 1;
+}
+
+.section {
+  margin         : 0px 4rem;
+  display        : flex;
+  flex-direction : column;
+  justify-content: space-evenly;
+  align-items    : center;
+
 }
 
 .navbar {
@@ -17,7 +26,7 @@
   justify-content: space-between;
   padding        : 0px 6rem;
   width          : 100%;
-  height         : 80px;
+  height         : 100px;
   z-index        : 1;
 }
 
@@ -40,9 +49,9 @@
   display       : flex;
   flex-direction: row;
   align-items   : center;
-  gap           : 8%;
+  gap           : 10%;
   color         : #FFFFFF;
-  font-size     : large;
+  font-size     : larger;
 }
 
 .appButton {
@@ -97,6 +106,7 @@
 
 .header {
   min-height     : 100vh;
+  height         : 100%;
   display        : flex;
   flex-direction : row;
   gap            : 10px;
@@ -122,6 +132,7 @@
 
 .problem {
   min-height     : 100vh;
+  height         : 100%;
   display        : flex;
   flex-direction : row;
   gap            : 10px;
@@ -257,7 +268,7 @@
 }
 
 .statementContent ul {
-  list-style-image: url("/thumb-down.svg");
+  list-style-image: url("/bar.png");
 
 }
 
@@ -477,7 +488,7 @@
 
 .FeatureBox h1 {
   font-weight: 400;
-  font-size  : 22px;
+  font-size  : 26px;
   line-height: 30px;
   color      : #DCCB8D;
   text-align : center;
@@ -487,7 +498,7 @@
 .FeatureBox p {
   font-weight: 400;
   font-size  : 22px;
-  line-height: 18px;
+  line-height: 22px;
   text-align : center;
   color      : #FFFFFF;
 }
@@ -502,15 +513,38 @@
   height         : 100%;
   background     : linear-gradient(45deg, rgb(22, 29, 41, 0), rgb(22, 29, 41, 0)), url("/smokebg.png");
   background-size: cover;
-  top            : 2750px;
+  top            : 2875px;
+}
+
+.applicationBackground {
+  background-image: url("/logo-stark.svg");
+  background-size : cover;
+  position        : absolute;
+  width           : 40%;
+  height          : 130%;
+  top             : 3436px;
+  left            : 0px;
+}
+
+.applicationBackgroundMob {
+  background-image: url("/guildhallmobile.png");
+  background-size : cover;
+  position        : absolute;
+  width           : 30%;
+  height          : 100%;
+  top             : 3690px;
+  right           : -80px;
 }
 
 .application {
 
   display       : flex;
   flex-direction: row;
+  width         : 90%;
+  height        : 100%;
 
 }
+
 
 .applicationHeader {
   text-align    : left;
@@ -518,11 +552,17 @@
   line-height   : 25px;
   letter-spacing: -0.011em;
   color         : #DCCB8D;
-  padding       : 4%;
+  padding       : 6%;
+  margin-bottom : 30px;
 
 }
 
-.ApplicationGrid {}
+.ApplicationGrid {
+  display       : flex;
+  flex-direction: column;
+  gap           : 25px;
+  ;
+}
 
 .applicationBar {
   display       : flex;
@@ -533,18 +573,70 @@
   width         : 711px;
   height        : 133px;
   left          : 154px;
+  color         : #FFFFFF;
+
+  font-size  : 28px;
+  align-items: center;
 
 }
 
-.logostark {
-  position: absolute;
-  width   : 1181px;
-  height  : 1219px;
-  left    : -300px;
-  top     : 3522px;
-
-  opacity: 0.5;
+.applicationIcon {
+  margin: 20px;
 }
+
+
+.footer {
+  flex-direction : row;
+  width          : 100%;
+  position       : relative;
+  bottom         : 0px;
+  background     : linear-gradient(45deg, rgb(22, 29, 41, 0.2), rgb(22, 29, 41, 0.2)), url("/blueflamebg.png");
+  background-size: cover;
+  align-items    : center;
+  padding        : 2rem;
+  margin-top     : 40px;
+}
+
+.footer h1 {
+  font-size      : xx-large;
+  text-align     : center;
+  color          : #FFFFFF;
+  text-decoration: underline;
+  height         : 0px;
+}
+
+.footer p {
+  font-size : x-large;
+  text-align: center;
+  color     : #FFFFFF;
+}
+
+.socials {
+  width: 10%;
+
+}
+
+
+.discord {
+  margin: 10px;
+  cursor: pointer;
+}
+
+
+.twitter {
+  margin: 10px;
+  cursor: pointer
+}
+
+.documentation {
+  left: 50%
+}
+
+.appText {
+  color: #DCCB8D;
+}
+
+
 
 /* Conic Gradient Animation */
 .thirteen::before {
