@@ -5,24 +5,28 @@ import styles from "@/styles/Home.module.css";
 const Footer = () => {
   return (
     <div className={styles.footer}>
-      <Image
-        className={styles.footerLogo}
-        src="/guildly-logo.png"
-        alt="Guildly Logo"
-        width={250}
-        height={250}
-      />
+      <a href="#">
+        <Image
+          className={styles.footerLogo}
+          src="/guildly-logo.png"
+          alt="Guildly Logo"
+          width={250}
+          height={250}
+        />
+      </a>
       <div className={styles.powered}>
         <p>Powered by</p>
-        <div className={styles.starknet}>
-          <Image
-            src="/starknet_logo.svg"
-            alt="StarkNet Logo"
-            height={45}
-            width={45}
-          />
-          <p>Starknet</p>
-        </div>
+        <a href="https://www.starknet.io/" target="_blank" rel="noreferrer">
+          <div className={styles.starknet}>
+            <Image
+              src="/starknet_logo.svg"
+              alt="StarkNet Logo"
+              height={45}
+              width={45}
+            />
+            <p>Starknet</p>
+          </div>
+        </a>
       </div>
       <div className={styles.footerSections}>
         <div className={styles.footerSection}>

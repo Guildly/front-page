@@ -38,7 +38,9 @@ const Application = () => {
           <ApplicationGrid />
         </div>
         <div className={styles.applicationDesigns}>
-          <Image src="/designs.png" alt="App Designs" fill={true} />
+          <div className={styles.designsIcon}>
+            <Image src="/designs.png" alt="App Designs" fill={true} />
+          </div>
         </div>
       </motion.div>
     </section>

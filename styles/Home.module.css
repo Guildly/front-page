@@ -142,6 +142,13 @@
   padding        : 0px 10%;
 }
 
+.headerContent {
+  display       : flex;
+  flex-direction: column;
+  gap           : 20px;
+  padding       : 4rem;
+}
+
 .headerContent p {
   font-family   : 'Neuton';
   font-style    : normal;
@@ -150,7 +157,24 @@
   line-height   : 91px;
   text-transform: uppercase;
   color         : #FFFFFF;
-  padding       : 4rem;
+  margin        : 0px;
+}
+
+.headerAppButton {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  border-radius  : 5px;
+  background     : #DCCB8D;
+  width          : 20%;
+  height         : 40px;
+  padding        : 5px;
+  cursor         : pointer;
+}
+
+.headerAppButton p {
+  font-size: 16px;
+  color    : black;
 }
 
 .about {
@@ -556,8 +580,10 @@
 
 }
 
-.featureBox .icon {
-  align-items: center;
+.icon {
+  position: relative;
+  width   : 70px;
+  height  : 70px;
 }
 
 .featureBackground {
@@ -637,9 +663,17 @@
   right     : 10%;
 }
 
+.designsIcon {
+  position: relative;
+  width   : 100%;
+  height  : 100%;
+}
+
 .rule {
   color      : #FFFFFF;
   font-weight: 600;
+  padding    : 10% 0px;
+  animation  : blinker 2.5s linear infinite;
 }
 
 
@@ -647,6 +681,7 @@
   display            : flex;
   justify-content    : space-between;
   flex-direction     : row;
+  height             : 50%;
   width              : 100%;
   position           : relative;
   bottom             : 0px;
@@ -697,6 +732,10 @@
 
 .starknet p {
   font-size: 30px;
+}
+
+.starknet:hover {
+  color: #2F4865;
 }
 
 .footerSections {
@@ -904,14 +943,8 @@
   }
 }
 
-@keyframes moveUpFadeIn {
-  0% {
-    bottom : -20px;
-    opacity: 0;
-  }
-
-  100% {
-    bottom : 0;
-    opacity: 1;
+@keyframes blinker {
+  50% {
+    opacity: 0.25;
   }
 }

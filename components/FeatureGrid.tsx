@@ -6,13 +6,13 @@ const FeatureGrid = () => {
   return (
     <div className={styles.featuregrid}>
       <div className={styles.featureBox}>
-        <Image
-          className={styles.icon}
-          src="/handshake-simple-solid 1.png"
-          alt="handshake"
-          width={75}
-          height={60}
-        />
+        <div className={styles.icon}>
+          <Image
+            src="/handshake-simple-solid 1.png"
+            alt="handshake"
+            fill={true}
+          />
+        </div>
         <div className={styles.featureBoxheader}>
           <h1>Trustless</h1>
           <div className={styles.featureBoxp}>
@@ -23,13 +23,9 @@ const FeatureGrid = () => {
         </div>
       </div>
       <div className={styles.featureBox}>
-        <Image
-          className={styles.icon}
-          src="/chart-line-solid 1.png"
-          alt="chart"
-          width={62}
-          height={62}
-        />
+        <div className={styles.icon}>
+          <Image src="/chart-line-solid 1.png" alt="chart" fill={true} />
+        </div>
         <div className={styles.featureBoxheader}>
           <h1>Scalable</h1>
           <div className={styles.featureBoxp}>
@@ -41,13 +37,9 @@ const FeatureGrid = () => {
         </div>
       </div>
       <div className={styles.featureBox}>
-        <Image
-          className={styles.icon}
-          src="/social.png"
-          alt="social"
-          width={64.45}
-          height={51.66}
-        />
+        <div className={styles.icon}>
+          <Image src="/social.png" alt="social" fill={true} />
+        </div>
         <div className={styles.featureBoxheader}>
           <h1>Social</h1>
           <div className={styles.featureBoxp}>
@@ -59,13 +51,9 @@ const FeatureGrid = () => {
         </div>
       </div>
       <div className={styles.featureBox}>
-        <Image
-          className={styles.icon}
-          src="/circle-check-solid 1.png"
-          alt="check"
-          width={56}
-          height={56}
-        />
+        <div className={styles.icon}>
+          <Image src="/circle-check-solid 1.png" alt="check" fill={true} />
+        </div>
         <div className={styles.featureBoxheader}>
           <h1>Permissionless</h1>
           <div className={styles.featureBoxp}>

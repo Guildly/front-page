@@ -15,17 +15,17 @@ const panelFlashVariant = {
 };
 
 const panel1Variant = {
-  visible: { opacity: 1, y: 0, x: 0, transition: { duration: 1, delay: 2 } },
+  visible: { opacity: 1, y: 0, x: 0, transition: { duration: 1, delay: 1 } },
   hidden: { opacity: 0, y: 300, x: -300 },
 };
 
 const panel2Variant = {
-  visible: { opacity: 1, y: 0, x: 0, transition: { duration: 1, delay: 2.5 } },
+  visible: { opacity: 1, y: 0, x: 0, transition: { duration: 1, delay: 1.5 } },
   hidden: { opacity: 0, y: 300, x: 300 },
 };
 
 const panel3Variant = {
-  visible: { opacity: 1, y: 0, x: 0, transition: { duration: 1, delay: 3 } },
+  visible: { opacity: 1, y: 0, x: 0, transition: { duration: 1, delay: 2 } },
   hidden: { opacity: 0, y: 300, x: 0 },
 };
 

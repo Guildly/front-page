@@ -14,6 +14,9 @@ const Header = () => {
       />
       <div className={styles.headerContent}>
         <p>Protocol for sharing NFTs and Gameplay</p>
+        <div className={styles.headerAppButton}>
+          <p className={styles.launchText}>Coming Soon</p>
+        </div>
       </div>
     </div>
   );
