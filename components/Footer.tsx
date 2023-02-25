@@ -61,7 +61,6 @@ const Footer = () => {
         <div className={styles.footerSection}>
           <p className={styles.footerSectionHeader}>Protocol</p>
           <div className={styles.footerSectionContent}>
-            <a>Documentation</a>
             <a
               href="https://github.com/Guildly"
               target="_blank"
@@ -69,7 +68,6 @@ const Footer = () => {
             >
               Github
             </a>
-            <a>Developers</a>
           </div>
         </div>
         <div className={styles.footerSection}>
