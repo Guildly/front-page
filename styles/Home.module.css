@@ -8,8 +8,17 @@
   min-height     : 100vh;
 }
 
+.container {
+  margin   : 0 auto;
+  max-width: 1400px;
+  padding  : 0 3rem;
+  position : relative;
+  height   : 100%;
+}
+
 .section {
-  padding        : 0px 10%;
+  max-width      : 1400px;
+  margin         : 0 auto;
   display        : flex;
   flex-direction : column;
   justify-content: space-evenly;
@@ -23,23 +32,38 @@
 }
 
 .navbar {
-  position       : absolute;
+  position: absolute;
+  width   : 100%;
+  height  : 100px;
+  z-index : 1;
+}
+
+.navbarContent {
   display        : flex;
   flex-direction : row;
   align-items    : center;
   justify-content: space-between;
-  padding        : 0px 10%;
-  width          : 100%;
-  height         : 100px;
-  z-index        : 1;
+  height         : 100%;
 }
 
-.navLogo {
+.navLogoLeft {
   position: relative;
   display : inherit;
   width   : 100%;
   z-index : 2;
+}
 
+.navLogoLeft:hover img {
+  transform: scale(1.1);
+}
+
+.navLogoLeft img {
+  cursor    : pointer;
+  transition: .2s;
+}
+
+.navLogoCentre {
+  display: none;
 }
 
 .navContent {
@@ -58,8 +82,44 @@
   font-size     : larger;
 }
 
+.navLinks a {
+  transition: .5s;
+}
+
 .navLinks a:hover {
   color: #96A2BB;
+}
+
+.navMenu {
+  display: none;
+}
+
+.menu1 {
+  top: 0;
+}
+
+.menu2 {
+  top: 45%;
+}
+
+.menu3 {
+  bottom: 0;
+}
+
+/* .menu1.active {
+  display: none;
+}
+
+.menu2.active {
+  display: none;
+}
+
+.menu3.active {
+  display: none;
+} */
+
+.navMenuDropdown {
+  display: none;
 }
 
 .appButton {
@@ -72,6 +132,7 @@
   width          : 30%;
   padding        : 5px;
   cursor         : pointer;
+  transition     : .5s;
 }
 
 .appButton:hover {
@@ -130,16 +191,21 @@
 
 .header {
   min-height     : 100vh;
+  display        : flex;
+  align-items    : center;
   height         : 100%;
+  width          : 100%;
+  position       : relative;
+  background     : linear-gradient(45deg, rgb(22, 29, 41, 0.3), rgb(22, 29, 41, 0.3)), url("/blueflamebg.png");
+  background-size: cover;
+}
+
+.headerWrap {
   display        : flex;
   flex-direction : row;
   gap            : 10px;
   justify-content: center;
   align-items    : center;
-  position       : relative;
-  background     : linear-gradient(45deg, rgb(22, 29, 41, 0.3), rgb(22, 29, 41, 0.3)), url("/blueflamebg.png");
-  background-size: cover;
-  padding        : 0px 10%;
 }
 
 .headerContent {
@@ -248,31 +314,33 @@
 .NFTCards {
   flex-direction: row;
   position      : absolute;
-  height        : 100%;
-  width         : 100%;
+  height        : 50%;
+  width         : 35%;
   top           : 35%;
-  left          : 50%;
+  right         : 10%;
 }
 
 .NFTCard1 {
   position: absolute;
   z-index : 6;
-
-
+  width   : 300px;
+  height  : 300px;
 }
 
 .NFTCard2 {
   position: absolute;
-  left    : 10%;
+  left    : 20%;
   z-index : 5;
-
+  width   : 300px;
+  height  : 300px;
 }
 
 .NFTCard3 {
   position: absolute;
-  left    : 20%;
+  left    : 40%;
   z-index : 4;
-
+  width   : 300px;
+  height  : 300px;
 }
 
 
@@ -558,8 +626,7 @@
 }
 
 .featureText {
-  display   : none;
-  transition: all 0.3s ease-in;
+  display: none;
 }
 
 .featureBox:hover .featureText {
@@ -656,24 +723,18 @@
 }
 
 .applicationDesigns {
-  position  : absolute;
-  margin-top: 10%;
-  width     : 50%;
-  height    : 50%;
-  right     : 10%;
-}
-
-.designsIcon {
-  position: relative;
-  width   : 100%;
-  height  : 100%;
+  position   : absolute;
+  margin-top : 150px;
+  width      : 800px;
+  height     : 500px;
+  margin-left: 600px;
 }
 
 .rule {
   color      : #FFFFFF;
   font-weight: 600;
   padding    : 10% 0px;
-  animation  : blinker 2.5s linear infinite;
+  animation  : blinker 2s linear infinite;
 }
 
 
@@ -707,6 +768,12 @@
   text-align: left;
   color     : #FFFFFF;
   margin    : 0px;
+}
+
+.footerLogo {
+  position: relative;
+  width   : 200px;
+  height  : 200px;
 }
 
 .powered {
@@ -762,6 +829,10 @@
   cursor: pointer;
 }
 
+.socialIcon {
+  transition: .5s;
+}
+
 .socialIcon:hover {
   color: #96A2BB;
 }
@@ -774,9 +845,14 @@
   text-align    : left;
 }
 
+.footerSectionContent a {
+  transition: .5s;
+}
+
 .footerSectionContent a:hover {
   color: #96A2BB;
 }
+
 
 .documentation {
   left: 50%
@@ -786,124 +862,152 @@
   color: #DCCB8D;
 }
 
-
-
-/* Conic Gradient Animation */
-.thirteen::before {
-  animation : 6s rotate linear infinite;
-  width     : 200%;
-  height    : 200%;
-  background: var(--tile-border);
-}
-
-/* Inner Square */
-.thirteen::after {
-  inset        : 0;
-  padding      : 1px;
-  border-radius: var(--border-radius);
-  background   : linear-gradient(to bottom right,
-      rgba(var(--tile-start-rgb), 1),
-      rgba(var(--tile-end-rgb), 1));
-  background-clip: content-box;
-}
-
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
-    border    : 1px solid rgba(var(--card-border-rgb), 0.15);
-  }
-
-  .card:hover span {
-    transform: translateX(4px);
-  }
-}
-
-@media (prefers-reduced-motion) {
-  .thirteen::before {
-    animation: none;
-  }
-
-  .card:hover span {
-    transform: none;
-  }
-}
-
 /* Mobile */
 @media (max-width: 700px) {
-  .content {
-    padding: 4rem;
+  .navLinks {
+    display: none;
   }
 
-  .grid {
-    grid-template-columns: 1fr;
-    margin-bottom        : 120px;
-    max-width            : 320px;
-    text-align           : center;
+  .navLogoLeft {
+    display: none;
   }
 
-  .card {
-    padding: 1rem 2.5rem;
-  }
-
-  .card h2 {
-    margin-bottom: 0.5rem;
-  }
-
-  .center {
-    padding: 8rem 0 6rem;
-  }
-
-  .center::before {
-    transform: none;
-    height   : 300px;
-  }
-
-  .description {
-    font-size: 0.8rem;
-  }
-
-  .description a {
-    padding: 1rem;
-  }
-
-  .description p,
-  .description div {
-    display        : flex;
+  .navbarContent {
     justify-content: center;
-    position       : fixed;
+  }
+
+  .navLogoCentre {
+    position       : absolute;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
     width          : 100%;
+    z-index        : 2;
   }
 
-  .description p {
-    align-items  : center;
-    inset        : 0 0 auto;
-    padding      : 2rem 1rem 1.4rem;
-    border-radius: 0;
-    border       : none;
-    border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
-    background   : linear-gradient(to bottom,
-        rgba(var(--background-start-rgb), 1),
-        rgba(var(--callout-rgb), 0.5));
-    background-clip: padding-box;
-    backdrop-filter: blur(24px);
+  .navLogoCentre:hover img {
+    transform: scale(1.1);
   }
 
-  .description div {
-    align-items   : flex-end;
-    pointer-events: none;
-    inset         : auto 0 0;
-    padding       : 2rem;
-    height        : 200px;
-    background    : linear-gradient(to bottom,
-        transparent 0%,
-        rgb(var(--background-end-rgb)) 40%);
-    z-index: 1;
+  .navLogoCentre img {
+    cursor    : pointer;
+    transition: .2s;
   }
 
-  .header {
+  .navMenu {
+    display    : flex;
+    width      : 40px;
+    height     : 35px;
+    cursor     : pointer;
+    transition : .2s;
+    align-items: center;
+    position   : absolute;
+    left       : 10%;
+    z-index    : 7;
+  }
+
+  .navMenu .menu1.active {
+    width      : 100%;
+    top        : 100%;
+    transform  : rotate(45deg);
+    margin-top : -55%;
+    left       : 0;
+    margin-left: 0;
+  }
+
+  .navMenu .menu2.active {
+    width      : 100%;
+    transform  : rotate(-45deg);
+    top        : 100%;
+    margin-top : -55%;
+    left       : 0;
+    margin-left: 0;
+  }
+
+  .navMenu .menu3.active {
+    opacity: 0;
+  }
+
+  .navMenuDropdown.active {
+    display  : block;
+    position : absolute;
+    max-width: 200px;
+    min-width: 30px;
+    width    : 100%;
+    left     : 10%;
+    top      : 100px;
+    z-index  : 15;
+    font-size: 20px;
+  }
+
+  .dropdownContent {
     display       : flex;
     flex-direction: column;
+    gap           : 20px;
+    background    : #444B4E;
+    border-radius : 10px;
+    padding       : 20px;
+    color         : #DCCB8D;
+  }
+
+  .menu {
+    width     : 100%;
+    height    : 100%;
+    max-width : 50px;
+    max-height: 50px;
+    position  : relative;
+    box-sizing: border-box;
+    transition: all .5s;
+    cursor    : pointer;
+    overflow  : hidden;
+  }
+
+  .menuBar {
+    position     : absolute;
+    background   : white;
+    left         : 0;
+    right        : 0;
+    height       : 5px;
+    transition   : .2s;
+    border-radius: 1rem;
+  }
+
+  .appButton {
+    display: none;
+  }
+
+  .headerWrap {
+    display       : flex;
+    flex-direction: column;
+    margin-top    : 20%;
+    ;
+  }
+
+  .headerAppButton {
+    width: 40%;
+  }
+
+  .celticBackground {
+    top: 150%;
+  }
+
+  .section h1 {
+    text-align: center;
+  }
+
+  .NFTCard1 {
+    width : 150px;
+    height: 150px;
+  }
+
+  .NFTCard2 {
+    width : 150px;
+    height: 150px;
+  }
+
+  .NFTCard3 {
+    width : 150px;
+    height: 150px;
   }
 
   .statement {
@@ -911,7 +1015,62 @@
     flex-direction: column;
   }
 
+  .solutionsgrid {
+    padding: 0px;
+  }
 
+  .feature p {
+    text-align: center;
+  }
+
+  .featuregrid {
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+    gap            : 30px;
+  }
+
+  .featureBox {
+    width : 50%;
+    height: 200px;
+  }
+
+  .application {
+    padding        : 0px 10%;
+    justify-content: center;
+  }
+
+  .applicationBar {
+    width: 80%;
+  }
+
+  .applicationDesigns {
+    margin-top: 20%;
+    right     : 0;
+  }
+
+  .featureBackground {
+    display: none;
+  }
+
+  .applicationBackground {
+    top  : 4800px;
+    width: 60%;
+  }
+
+  .footer {
+    padding: 3% 5%;
+  }
+
+  .footerLogo {
+    width : 100px;
+    height: 100px;
+  }
+
+  .powered {
+    display: none;
+  }
 }
 
 
@@ -919,27 +1078,6 @@
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
-
-  .logo,
-  .thirteen img {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(360deg);
-  }
-
-  to {
-    transform: rotate(0deg);
   }
 }
 

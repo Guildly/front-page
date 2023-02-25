@@ -6,13 +6,9 @@ const Footer = () => {
   return (
     <div className={styles.footer}>
       <a href="#">
-        <Image
-          className={styles.footerLogo}
-          src="/guildly-logo.png"
-          alt="Guildly Logo"
-          width={250}
-          height={250}
-        />
+        <div className={styles.footerLogo}>
+          <Image src="/guildly-logo.png" alt="Guildly Logo" fill={true} />
+        </div>
       </a>
       <div className={styles.powered}>
         <p>Powered by</p>

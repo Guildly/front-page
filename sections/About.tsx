@@ -69,42 +69,27 @@ const About = () => {
             variants={card1Variant}
             initial="hidden"
             animate={control}
+            className={styles.NFTCard1}
           >
-            <Image
-              className={styles.NFTCard1}
-              src="/viking-card.png"
-              alt="Viking card"
-              width={300}
-              height={300}
-            />
+            <Image src="/viking-card.png" alt="Viking card" fill={true} />
           </motion.div>
           <motion.div
             ref={ref}
             variants={card2Variant}
             initial="hidden"
             animate={control}
+            className={styles.NFTCard2}
           >
-            <Image
-              className={styles.NFTCard2}
-              src="/space-card.png"
-              alt="Space card"
-              width={300}
-              height={300}
-            />
+            <Image src="/space-card.png" alt="Space card" fill={true} />
           </motion.div>
           <motion.div
             ref={ref}
             variants={card3Variant}
             initial="hidden"
             animate={control}
+            className={styles.NFTCard3}
           >
-            <Image
-              className={styles.NFTCard3}
-              src="/realm-card.png"
-              alt="Realm card"
-              width={300}
-              height={300}
-            />
+            <Image src="/realm-card.png" alt="Realm card" fill={true} />
           </motion.div>
         </div>
       </motion.div>
