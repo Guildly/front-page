@@ -155,40 +155,6 @@
   display: block;
 }
 
-
-.grid {
-  display              : grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  width                : var(--max-width);
-  max-width            : 100%;
-}
-
-.card {
-  padding      : 1rem 1.2rem;
-  border-radius: var(--border-radius);
-  background   : rgba(var(--card-rgb), 0);
-  border       : 1px solid rgba(var(--card-border-rgb), 0);
-  transition   : background 200ms, border 200ms;
-}
-
-.card span {
-  display   : inline-block;
-  transition: transform 200ms;
-}
-
-.card h2 {
-  font-weight  : 600;
-  margin-bottom: 0.7rem;
-}
-
-.card p {
-  margin     : 0;
-  opacity    : 0.6;
-  font-size  : 0.9rem;
-  line-height: 1.5;
-  max-width  : 30ch;
-}
-
 .header {
   min-height     : 100vh;
   display        : flex;
@@ -310,7 +276,7 @@
 
 .logo {
   position: relative;
-  width   : 30%;
+  width   : 500px;
   height  : 500px;
 }
 
@@ -610,6 +576,7 @@
   display        : flex;
   justify-content: center;
   flex-direction : column;
+  gap            : 20px;
   cursor         : pointer;
 }
 
@@ -1010,12 +977,19 @@
   }
 
   .celticBackground {
-    top: 150%;
+    /* top: 150%; */
   }
 
   .section h1 {
     text-align: center;
   }
+
+  /* .aboutContent {
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+  } */
 
   .aboutBox {
     margin: 20px 50px;
@@ -1101,7 +1075,7 @@
   }
 
   .feature h1 {
-    font-size: 50px;
+    font-size: 42px;
   }
 
   .featuregrid {
@@ -1119,7 +1093,7 @@
 
   .featureBox h1 {
     margin   : 0;
-    font-size: 32px;
+    font-size: 26px;
   }
 
   .application {
@@ -1136,8 +1110,10 @@
   }
 
   .applicationDesigns {
-    margin-top: 20%;
-    right     : 0;
+    margin-top  : 20%;
+    margin-right: 600px;
+    width       : 400px;
+    height      : 250px;
   }
 
   .featureBackground {
@@ -1174,8 +1150,12 @@
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
-  .grid {
-    grid-template-columns: repeat(2, 50%);
+  .navbar a {
+    font-size: 14px;
+  }
+
+  .appButton p {
+    font-size: 14px;
   }
 }
 
