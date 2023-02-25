@@ -265,7 +265,6 @@
 
 .celticBackground {
   position       : absolute;
-  width          : 1650.55px;
   height         : 1487px;
   top            : 100%;
   width          : 100%;
@@ -629,7 +628,7 @@
   height         : 175%;
   background     : linear-gradient(45deg, rgb(22, 29, 41, 0.9), rgb(22, 29, 41, 0.9)), url("/smokebg.png");
   background-size: cover;
-  top            : 2875px;
+  top            : 2725px;
 }
 
 .applicationBackground {
@@ -695,7 +694,7 @@
 .applicationDesigns {
   position   : absolute;
   margin-top : 150px;
-  width      : 800px;
+  width      : 1000px;
   height     : 500px;
   margin-left: 600px;
 }
@@ -1122,7 +1121,8 @@
 
   .applicationBackground {
     top  : 4800px;
-    width: 60%;
+    width: 100%;
+    left : -100px;
   }
 
   .rule {
