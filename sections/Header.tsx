@@ -7,13 +7,9 @@ const Header = () => {
     <div className={styles.header}>
       <div className={styles.container}>
         <div className={styles.headerWrap}>
-          <Image
-            className={styles.logo}
-            src="/guildly-logo.png"
-            alt="Guildly Logo"
-            width={455}
-            height={494}
-          />
+          <div className={styles.logo}>
+            <Image src="/guildly-logo.png" alt="Guildly Logo" fill={true} />
+          </div>
           <div className={styles.headerContent}>
             <p>Protocol for sharing NFTs and Gameplay</p>
             <div className={styles.headerAppButton}>

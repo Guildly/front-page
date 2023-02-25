@@ -11,7 +11,7 @@
 .container {
   margin   : 0 auto;
   max-width: 1400px;
-  padding  : 0 3rem;
+  padding  : 0 1rem;
   position : relative;
   height   : 100%;
 }
@@ -99,7 +99,7 @@
 }
 
 .menu2 {
-  top: 45%;
+  top: 40%;
 }
 
 .menu3 {
@@ -213,6 +213,7 @@
   flex-direction: column;
   gap           : 20px;
   padding       : 4rem;
+  width         : 70%;
 }
 
 .headerContent p {
@@ -309,6 +310,8 @@
 
 .logo {
   position: relative;
+  width   : 30%;
+  height  : 500px;
 }
 
 .NFTCards {
@@ -873,6 +876,7 @@
   }
 
   .navbarContent {
+    position       : relative;
     justify-content: center;
   }
 
@@ -896,13 +900,13 @@
 
   .navMenu {
     display    : flex;
-    width      : 40px;
-    height     : 35px;
+    width      : 30px;
+    height     : 25px;
     cursor     : pointer;
     transition : .2s;
     align-items: center;
     position   : absolute;
-    left       : 10%;
+    left       : 0;
     z-index    : 7;
   }
 
@@ -934,7 +938,7 @@
     max-width: 200px;
     min-width: 30px;
     width    : 100%;
-    left     : 10%;
+    left     : 0;
     top      : 100px;
     z-index  : 15;
     font-size: 20px;
@@ -983,8 +987,26 @@
     ;
   }
 
+  .headerContent {
+    padding: 0;
+  }
+
+  .headerContent p {
+    font-size  : 40px;
+    line-height: 50px;
+  }
+
+  .logo {
+    width : 300px;
+    height: 300px;
+  }
+
   .headerAppButton {
     width: 40%;
+  }
+
+  .headerAppButton p {
+    font-size: 12px;
   }
 
   .celticBackground {
@@ -1015,12 +1037,55 @@
     flex-direction: column;
   }
 
+  .quote {
+    width: 80%;
+  }
+
   .solutionsgrid {
-    padding: 0px;
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+    padding        : 0px;
+    gap            : 20px;
+  }
+
+  .solutionsgrid p {
+    font-size: large;
+  }
+
+  .solutionsgrid1 {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    gap           : 20px;
+  }
+
+  .solutionsbox1 {
+    margin: 0;
+    width : 100%;
+  }
+
+  .solutionsbox2 {
+    margin: 0;
+    width : 100%;
+  }
+
+  .solutionsbox3 {
+    margin: 0;
+    width : 100%;
+  }
+
+  .feature {
+    padding: 0;
   }
 
   .feature p {
     text-align: center;
+  }
+
+  .feature h1 {
+    font-size: 50px;
   }
 
   .featuregrid {
@@ -1032,8 +1097,13 @@
   }
 
   .featureBox {
-    width : 50%;
+    width : 70%;
     height: 200px;
+  }
+
+  .featureBox h1 {
+    margin   : 0;
+    font-size: 32px;
   }
 
   .application {
@@ -1042,7 +1112,11 @@
   }
 
   .applicationBar {
-    width: 80%;
+    width: 100%;
+  }
+
+  .applicationBar p {
+    font-size: 20px;
   }
 
   .applicationDesigns {
@@ -1059,8 +1133,16 @@
     width: 60%;
   }
 
+  .rule {
+    text-align: center;
+  }
+
   .footer {
     padding: 3% 5%;
+  }
+
+  .footer p {
+    font-size: large;
   }
 
   .footerLogo {
