@@ -1142,6 +1142,10 @@
     height: 100px;
   }
 
+  .footerSections {
+    overflow: hidden;
+  }
+
   .socialIcon {
     width : 30px;
     height: 30px;
