@@ -999,7 +999,8 @@
   }
 
   .NFTCards {
-    top: 45%;
+    top  : 45%;
+    right: 20%;
   }
 
   .NFTCard1 {
