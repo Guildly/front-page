@@ -1145,10 +1145,6 @@
     height: 100px;
   }
 
-  .footerSections {
-    overflow: hidden;
-  }
-
   .footerSectionContent.infoSection {
     display: none;
   }

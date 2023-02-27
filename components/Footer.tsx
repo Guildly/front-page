@@ -70,13 +70,9 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className={styles.footerSection}>
+        <div className={[styles.footerSection, styles.infoSection].join(" ")}>
           <p className={styles.footerSectionHeader}>Info</p>
-          <div
-            className={[styles.footerSectionContent, styles.infoSection].join(
-              " "
-            )}
-          >
+          <div className={styles.footerSectionContent}>
             <a href="#about">About</a>
             <a href="#problem">Problem</a>
             <a href="#solution">Solution</a>
