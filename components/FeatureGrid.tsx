@@ -30,7 +30,7 @@ const FeatureGrid = () => {
           <h1>Scalable</h1>
           <div className={styles.featureBoxp}>
             <p className={styles.featureText}>
-              There are no limitations that come with managing DAO&apos;s or
+              There are no limitations that come with managing DAOs or
               governance disagreements.
             </p>
           </div>
