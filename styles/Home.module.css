@@ -164,6 +164,7 @@
   position       : relative;
   background     : linear-gradient(45deg, rgb(22, 29, 41, 0.3), rgb(22, 29, 41, 0.3)), url("/blueflamebg.png");
   background-size: cover;
+  z-index        : 1;
 }
 
 .headerWrap {
@@ -1146,6 +1147,10 @@
 
   .footerSections {
     overflow: hidden;
+  }
+
+  .footerSectionContent.infoSection {
+    display: none;
   }
 
   .socialIcon {
