@@ -14,12 +14,9 @@ const Footer = () => {
         <p>Powered by</p>
         <a href="https://www.starknet.io/" target="_blank" rel="noreferrer">
           <div className={styles.starknet}>
-            <Image
-              src="/starknet_logo.svg"
-              alt="StarkNet Logo"
-              height={45}
-              width={45}
-            />
+            <div className={styles.starknetLogo}>
+              <Image src="/starknet_logo.svg" alt="StarkNet Logo" fill={true} />
+            </div>
             <p>Starknet</p>
           </div>
         </a>

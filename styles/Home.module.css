@@ -35,7 +35,7 @@
   position: absolute;
   width   : 100%;
   height  : 100px;
-  z-index : 1;
+  z-index : 2;
 }
 
 .navbarContent {
@@ -775,6 +775,12 @@
   color: #2F4865;
 }
 
+.starknetLogo {
+  position: relative;
+  width   : 45px;
+  height  : 45px;
+}
+
 .footerSections {
   position      : relative;
   display       : flex;
@@ -1136,6 +1142,10 @@
     padding: 3% 5%;
   }
 
+  .footerSections {
+    gap: 10%;
+  }
+
   .footer p {
     font-size: large;
   }
@@ -1143,6 +1153,15 @@
   .footerLogo {
     width : 100px;
     height: 100px;
+  }
+
+  .powered p {
+    font-size: 14px;
+  }
+
+  .starknetLogo {
+    width : 20px;
+    height: 20px;
   }
 
   .footerSection.infoSection {
@@ -1154,9 +1173,6 @@
     height: 30px;
   }
 
-  .powered {
-    display: none;
-  }
 }
 
 
