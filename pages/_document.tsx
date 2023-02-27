@@ -19,7 +19,7 @@ export default function Document() {
       />
       <meta property="og:url" content="%PUBLIC_URL%" />
       <meta property="og:image" content="%PUBLIC_URL%/guildly-logo.png" />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/black-logo.png" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
