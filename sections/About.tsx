@@ -51,7 +51,7 @@ const About = () => {
           <div className={styles.aboutBox}>
             <p>
               Guildly is a decentralized protocol that allows for the management
-              of shared accounts and the sharing of NFT assets in Web 3.0 games.
+              of shared accounts and the sharing of NFT assets in Web3 games.
             </p>
           </div>
           <div className={styles.aboutBox2}>

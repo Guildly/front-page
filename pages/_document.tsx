@@ -15,10 +15,29 @@ export default function Document() {
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
-        content="Guildly is a decentralized protocol that allows for the management of shared accounts and the sharing of NFT assets in Web 3.0 games."
+        content="Guildly is a decentralized protocol that allows for the management of shared accounts and the sharing of NFT assets in Web3 games."
       />
       <meta property="og:url" content="%PUBLIC_URL%" />
       <meta property="og:image" content="%PUBLIC_URL%/guildly-logo.png" />
+      <meta
+        name="keywords"
+        content="Guildly, Starkware, Starknet, Guild, NFT, Gaming, DAO, L2, Web 3, protocol, Layer 2 scaling with StarkWare, Wen Launch, Nodes, Decentralized Node Network, Decentralized, zkRollups, Rewards, Gamified Leaderboard, Gamification, Swap, Liquidity, Low gas, Governance, Liquid Governance, Liquidity mining, StarkNet token, StarkNet how to invest, Starkware website, Guildly news, Guildly app, Guildly coinmarketcap, starkware ecosystem, Guildly investors , cairo starkware, starkware twitter, Guildly twitter, Guildly jobs, rollups, StarkWare Token , starknet"
+      />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@guildlyxyz" />
+      <meta name="twitter:creator" content="@guildlyxyz" />
+      <meta
+        name="twitter:title"
+        content="Guildly - Protocol for Sharing NFTs and Gameplay"
+      />
+      <meta
+        name="twitter:image"
+        content="https://guildly.xyz/assets/images/guiidly-social-banner.png"
+      />
+      <meta
+        name="twitter:description"
+        content="Guildly is a decentralized protocol that allows for the management of shared accounts and the sharing of NFT assets in Web3 games."
+      />
       <link rel="icon" href="/black-logo.png" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
