@@ -18,7 +18,7 @@ export default function Document() {
         content="Guildly is a decentralized protocol that allows for the management of shared accounts and the sharing of NFT assets in Web3 games."
       />
       <meta property="og:url" content="%PUBLIC_URL%" />
-      <meta property="og:image" content="%PUBLIC_URL%/guildly-logo.png" />
+      <meta property="og:image" content="%PUBLIC_URL%/social-banner.png" />
       <meta
         name="keywords"
         content="Guildly, Starkware, Starknet, Guild, NFT, Gaming, DAO, L2, Web 3, protocol, Layer 2 scaling with StarkWare, Wen Launch, Nodes, Decentralized Node Network, Decentralized, zkRollups, Rewards, Gamified Leaderboard, Gamification, Swap, Liquidity, Low gas, Governance, Liquid Governance, Liquidity mining, StarkNet token, StarkNet how to invest, Starkware website, Guildly news, Guildly app, Guildly coinmarketcap, starkware ecosystem, Guildly investors , cairo starkware, starkware twitter, Guildly twitter, Guildly jobs, rollups, StarkWare Token , starknet"
@@ -30,10 +30,7 @@ export default function Document() {
         name="twitter:title"
         content="Guildly - Protocol for Sharing NFTs and Gameplay"
       />
-      <meta
-        name="twitter:image"
-        content="https://guildly.xyz/assets/images/guiidly-social-banner.png"
-      />
+      <meta name="twitter:image" content="%PUBLIC_URL%/social-banner.png" />
       <meta
         name="twitter:description"
         content="Guildly is a decentralized protocol that allows for the management of shared accounts and the sharing of NFT assets in Web3 games."
