@@ -865,15 +865,16 @@
   }
 
   .navMenu {
-    display    : flex;
-    width      : 30px;
-    height     : 25px;
-    cursor     : pointer;
-    transition : .2s;
-    align-items: center;
-    position   : absolute;
-    left       : 0;
-    z-index    : 7;
+    display                    : flex;
+    width                      : 30px;
+    height                     : 25px;
+    cursor                     : pointer;
+    transition                 : .2s;
+    align-items                : center;
+    position                   : absolute;
+    left                       : 0;
+    z-index                    : 7;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 
   .navMenu .menu1.active {
