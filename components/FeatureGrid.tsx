@@ -58,7 +58,7 @@ const FeatureGrid = () => {
           <h1>Permissionless</h1>
           <div className={styles.featureBoxp}>
             <p className={styles.featureText}>
-              Anyone can create a guild in a few clicks. From small group of
+              Anyone can create a guild in a few clicks. From a small group of
               friends to a High Net Worth DAO.
             </p>
           </div>
