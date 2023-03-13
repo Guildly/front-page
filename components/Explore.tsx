@@ -3,9 +3,7 @@ import { motion } from "framer-motion";
 import ExploreCard from "./ExploreCard";
 import { FaArrowRight, FaWallet } from "react-icons/fa";
 
-type Props = {};
-
-const Explore = (props: Props) => {
+const Explore = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}

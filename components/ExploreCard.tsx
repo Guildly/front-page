@@ -2,9 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
 
-type Props = {};
-
-const ExploreCard = (props: Props) => {
+const ExploreCard = () => {
   return (
     <article className="flex flex-col rounded-lg mt-6 items-center space-y-4 flex-shrink-0 w-[700px] md:w-[500px] xl:w-[700px] snap-center border-[2px] border-yellow-400 p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
       <motion.img
